@@ -8,12 +8,12 @@ import matplotlib.pyplot
 import pandas as pd
 
 #Import dataset
-customer_dataset = pd.read_csv('Data.csv')
-X = customer_dataset.iloc[:, :-1].values
-y = customer_dataset.iloc[:, -1].values
+dataset = pd.read_csv('Data.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
 
-print(X)
-print(y)
+#print(X)
+#print(y)
 
 #Taking care of missing data
 from sklearn.impute import SimpleImputer
